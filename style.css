@@ -1,6 +1,6 @@
 :root{
-    --primary-color:#22254b;
-    --secondary-color:#373b69;
+    --primary-color:#ffffff;
+    --secondary-color:#f80d0d;
     }
     body{
     background-color: var(--primary-color);
@@ -8,22 +8,43 @@
     font-family: 'Poppins', sans-serif;
     }
     header{
+    width: 100%;
+    height: 50px;
     padding: 1rem;
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--secondary-color);
+    justify-content: space-around;
+    background-color: var(--secondary-color);   
+    }
+    #form{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    #form div{
+        width: 700px;
+    }
+    #form img{
+        width: 50px;
+    }
+    .logo-area{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        width: 50px;
     }
     .search{
-    background-color: transparent;
+    background-color: white;
     border: 2px solid var(--primary-color);
     border-radius: 50px;
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    color: #fff;
+    color: #0c0b0b;
     }
     .search:placeholder{
-    color: #7378c5;
+    color: #ffffff;
     }
     .search:focus{
     outline: none;
@@ -50,27 +71,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem 1rem 1rem;
     letter-spacing: 0.5px;
     }
     .movie-info h3{
     margin-top: 0;
+    width: 250px;
     }
     .movie-info span{
     background-color: var(--primary-color);
     padding: 0.25rem 0.25rem;
     border-radius: bold;
     border-radius: 3px;
+    
     }
     .movie-info span.green{
-    color: lightgreen;
+    color: rgb(9, 255, 0);
     }
     .movie-info span.orange{
-    color: orange;
-    }
+    color: rgb(161, 137, 0);
+}
     .movie-info span.red{
     color: red;
-    }
+}
     .overview{
     background-color: #fff;
     padding: 2rem;
@@ -85,3 +108,12 @@
     .movie:hover .overview{
     transform: translateY(0);
     }
+    #main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+#form h1{
+    width: 500px;
+}
+   
